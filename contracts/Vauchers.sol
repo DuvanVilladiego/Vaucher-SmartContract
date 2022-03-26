@@ -12,7 +12,7 @@ contract Vauchers is ERC721 {
     Counters.Counter private _idCounter;
     Counters.Counter private _idVaucherCounter;
 
-    constructor() ERC721("EventVoucher", "EV") {}
+    constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) {}
 
     struct VaucherInformation {
         string Name;
